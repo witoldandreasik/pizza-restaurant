@@ -1,0 +1,69 @@
+.parallax {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .parallax__container {
+    max-width: 1000px;
+    height: 300px;
+    background-color: transparent;
+    .parallax__info {
+      display: flex;
+      text-align: center;
+      color: white;
+      justify-content: flex-end;
+      .parallax__info-place {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+        // max-width: 50%;
+        .parallax__title {
+          color: #b9702c;
+          font-family: "Playball", cursive;
+          font-size: 6.5rem;
+        }
+        .parallax__subtitle {
+          font-size: 2rem;
+          padding-bottom: 20px;
+          border-bottom: 2px solid white;
+        }
+        .parallax__description {
+          margin-top: 20px;
+        }
+
+        .parallax__button-round {
+          background-color: transparent;
+          border-radius: 50px;
+          border: 2px solid #ff8000;
+          padding: 10px 45px;
+          margin: 20px 10px;
+          font-size: 16px;
+          color: #ff8000;
+          cursor: pointer;
+          outline: none;
+          transition: 0.3s ease-in-out;
+        }
+        .parallax__button-round:hover {
+          border-color: white;
+          color: white;
+        }
+      }
+    }
+  }
+}
+// @media (max-width: 1000px) {
+//   .parallax {
+//     .parallax__container {
+//       .parallax__info {
+//         padding-left: 200px;
+//         padding-right: 10px;
+//         margin: 0 auto;
+//         .parallax__title {
+//           font-size: 4.5rem;
+//         }
+//       }
+//     }
+//   }
+// }
