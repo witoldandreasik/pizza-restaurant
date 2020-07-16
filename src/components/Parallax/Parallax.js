@@ -15,7 +15,7 @@ function Jarallax() {
             <div className="parallax__info">
               <div className="parallax__info-place">
                 <h1 className="parallax__title">Welcome</h1>
-                <h4 className="parallax__subtitle">To Pizza Restaurant</h4>
+                <h4 className="parallax__subtitle">TO PIZZA ITALY</h4>
                 <p className="parallax__description">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Quibusdam at repellat ea suscipit sit culpa minus corrupti
