@@ -1,0 +1,20 @@
+.parallax-quality {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .parallax-quality__text {
+    font-family: "playball", "cursive";
+    font-size: 4.3rem;
+    text-align: center;
+    color: #b9702c;
+  }
+}
+
+@media (max-width: 800px) {
+  .parallax-quality {
+    .parallax-quality__text {
+      font-size: 2.9rem;
+    }
+  }
+}
