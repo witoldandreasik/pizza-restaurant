@@ -1,0 +1,43 @@
+.carousel {
+  font-family: "Lato", sans-serif;
+  height: 55vh;
+  width: 100%;
+  .carousel__container {
+    width: 90%;
+    margin: 0 auto;
+    .carousel__item {
+      height: 55vh;
+      font-size: 1.5rem;
+      color: white;
+      text-align: center;
+      .carousel__text {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .carousel__customer {
+        font-family: "playball", cursive;
+        font-size: 1.5rem;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .carousel__container {
+    .carousel__item {
+      .carousel__text {
+        font-size: 1rem;
+      }
+    }
+  }
+}
