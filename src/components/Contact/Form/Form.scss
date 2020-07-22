@@ -1,0 +1,104 @@
+.card {
+  width: 100%;
+  text-align: center;
+  .card__title {
+    font-family: "playball", cursive;
+    font-size: 4.5rem;
+    color: #b9702c;
+    padding-top: 2rem;
+  }
+  .form__container {
+    flex-basis: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    .form {
+      width: 100%;
+      padding: 3rem;
+      .form__button {
+        background-color: #b9702c;
+        border: none;
+        border-radius: 50%;
+        padding: 20px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        margin: 30px 0 0 0;
+        cursor: pointer;
+        outline: none;
+        transition: 0.3s ease;
+      }
+      .form__button:hover {
+        background-color: #8b5522;
+        box-shadow: 0 0 2px 2px #aaa;
+      }
+      .form__section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+        .form__input {
+          width: 50%;
+          height: 100%;
+          outline: none;
+          padding-top: 70px;
+          border: none;
+          background-color: transparent;
+          margin-bottom: 3px;
+        }
+        .form__label {
+          position: absolute;
+          bottom: 0px;
+          left: 25%;
+          width: 50%;
+          height: 100%;
+          color: #666;
+          pointer-events: none;
+          border-bottom: 2px solid #b9702c;
+          overflow: hidden;
+        }
+        .form__label::after {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          left: 0px;
+          bottom: -1px;
+          border-bottom: 3px solid #b9702c;
+          transform: translateX(-100%);
+          transition: transform 0.3s ease;
+        }
+        .form__content {
+          position: absolute;
+          bottom: 5px;
+          left: 0px;
+          transition: all 0.3s ease;
+          font-weight: bold;
+        }
+        .form__input:focus + .form__label .form__content,
+        .form__input:valid + .form__label .form__content {
+          transform: translateY(-150%);
+          font-size: 14px;
+          color: #b9702c;
+        }
+        .form__input:focus + .form__label::after,
+        .form__input:valid + .form__label::after {
+          transform: translateX(0%);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    .card__title {
+      font-family: "playball", cursive;
+      font-size: 4.3rem;
+      color: #b9702c;
+      padding-top: 2rem;
+    }
+  }
+}
