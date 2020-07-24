@@ -1,5 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Pizza restaurant website
+
+-React with external libraries <br />
+-SCSS <br />
+-BEM methodology <br />
+
+## TODO
+
+-menu from database(firebase) <br />
+-make footer and navigation <br />
+-rebuild form to more flexible <br />
+-link buttons to correct sections <br />
+
 ## Available Scripts
 
 In the project directory, you can run:
